@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import { useEffect, useState } from "react";
+import './API';
 
 function App() {
   return (
@@ -10,7 +11,6 @@ function App() {
   );
 }
 
-const API = 'https://fsd-test-gaurav.herokuapp.com'
 
 function PhoneList(){
   const [mobiles,setMobiles] = useState([]);

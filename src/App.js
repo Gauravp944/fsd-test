@@ -11,12 +11,13 @@ function App() {
   );
 }
 
+const API_value=API();
 
 function PhoneList(){
   const [mobiles,setMobiles] = useState([]);
 
   useEffect(()=>{
-    fetch(`${API}/mobiles`)
+    fetch(`${API_value}/mobiles`)
       .then((data)=>data.json())
       .then((mbls)=>setMobiles(mbls));
   },[]);

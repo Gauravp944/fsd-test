@@ -1,4 +1,6 @@
-function API() {
-    const link="https://fsd-test-gaurav.herokuapp.com";
-    return link;
-  }
+
+export const Global_Values = {
+    "link":'https://fsd-test-gaurav.herokuapp.com'
+};
+
+

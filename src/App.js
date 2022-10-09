@@ -1,7 +1,8 @@
-import logo from './logo.svg';
+
 import './App.css';
 import { useEffect, useState } from "react";
-import './API';
+import {Global_Values} from './API'
+
 
 function App() {
   return (
@@ -11,7 +12,10 @@ function App() {
   );
 }
 
-const API_value=API();
+// const link="https://fsd-test-gaurav.herokuapp.com";
+
+const API_value=Global_Values.link.toString();
+
 
 function PhoneList(){
   const [mobiles,setMobiles] = useState([]);
